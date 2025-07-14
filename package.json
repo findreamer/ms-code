@@ -1,0 +1,23 @@
+{
+  "name": "ms-code",
+  "version": "1.0.0",
+  "description": "AI驱动的组件代码生成引擎",
+  "main": "index.js",
+  "scripts": {
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "install:all": "pnpm install && cd frontend && pnpm install && cd ../backend && pnpm install"
+  },
+  "keywords": [
+    "ai",
+    "code-generator",
+    "react",
+    "midway"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
